@@ -5,6 +5,6 @@ The objective of this project is to remove the projective distortion on images b
 
 More test images can be tested to make sure that the program is working properly by adding it to the images folder in this repository (Don't forget to rename the file name in the main code [line 63]). Currently, there are three provided images in the <i>images</i> folder that can be used for testing.
 
-This program is undergraduate assignment on the class of CoE197U in University of the Philippines, Diliman. 
+This program is undergraduate assignment on the class of CoE197M in University of the Philippines, Diliman. 
 
 Created by: <b> Joshua B. Ramos </b>
