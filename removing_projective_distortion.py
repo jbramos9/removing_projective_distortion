@@ -2,12 +2,19 @@
 # Created by: Joshua B. Ramos 
 import cv2 
 import numpy as np
+import argparse
 
 # Initiate these variables
 pts_selected = []
 ctr = 0
 
 # Functions
+def argparser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input_image', type=str, default='images/test_img2.jpg', help='path/to/root')
+    
+    return parser.parse_args()
+
 def shapeSelection(event, x, y, flags, param):
     global pts_selected, ctr
 
@@ -60,7 +67,9 @@ def linearTransformation(image, result, M): # Perform the mapping from image to 
     return result
 
 # Insert image and initialize the perspective corrected result
-image = cv2.imread('images/test_img2.jpg')
+args = argparser()
+input_image = args.input_image
+image = cv2.imread(input_image)
 image = cv2.resize(image,(500,707))
 result = np.zeros([707,500,3],dtype=np.uint8)
 
