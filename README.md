@@ -18,6 +18,6 @@ More test images can be tested to make sure that the program is working properly
 ### Some Notes
 * This program does not make use of the PerspectiveTransform and warpPerspective functions of the opencv library. As a result, some artefacts are observed in the output image.
 * To change input images, use the line 
-<p align="center"><i>python removing_projective_distortion.py --input_image="path/to/the/file/location"</i>.</p>
+<p align="center"><i>python removing_projective_distortion.py --input_image="path/to/the/file/location"</i></p>
 
 Created by: <b> Joshua B. Ramos </b>
