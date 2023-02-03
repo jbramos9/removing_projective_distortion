@@ -13,9 +13,10 @@ The objective of this project is to remove the projective distortion on images b
   <br>Figure 2. Perspective Corrected Image.
 </p>
 
-More test images can be tested to make sure that the program is working properly by adding it to the images folder in this repository (Don't forget to rename the file name in the main code [line 63]). Currently, there are three provided images in the <i>images</i> folder that can be used for testing.
+More test images can be tested to make sure that the program is working properly by adding it to the images folder in this repository. Currently, there are three provided images in the <i>images</i> folder that can be used for testing.
 
 ### Some Notes
 * This program does not make use of the PerspectiveTransform and warpPerspective functions of the opencv library. As a result, some artefacts are observed in the output image.
+* To change input images, use the line <i>python removing_projective_distortion.py --input_image = "path/to/the/file/location"</i>.
 
 Created by: <b> Joshua B. Ramos </b>
